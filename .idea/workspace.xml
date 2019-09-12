@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f7b16d4-2419-4bb2-8db9-f35fb34ac90a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/caller_callee_package_map/aabb57bf1f492c9a3b9c43109b89d5b691b7250e569a1589d1be4e8bf7a80820.json" beforeDir="false" afterPath="$PROJECT_DIR$/caller_callee_package_map/aabb57bf1f492c9a3b9c43109b89d5b691b7250e569a1589d1be4e8bf7a80820.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/create_feature_mapping_for_apk.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_feature_mapping_for_apk.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
