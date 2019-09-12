@@ -1,22 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1f7b16d4-2419-4bb2-8db9-f35fb34ac90a" name="Default Changelist" comment="" />
+    <list default="true" id="1f7b16d4-2419-4bb2-8db9-f35fb34ac90a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/caller_callee_package_map/aabb57bf1f492c9a3b9c43109b89d5b691b7250e569a1589d1be4e8bf7a80820.json" beforeDir="false" afterPath="$PROJECT_DIR$/caller_callee_package_map/aabb57bf1f492c9a3b9c43109b89d5b691b7250e569a1589d1be4e8bf7a80820.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create_feature_mapping_for_apk.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_feature_mapping_for_apk.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1QhUXNIylbV1uiUZUuTogO9vMU9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="PyConsoleConfigurable.Python Console" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
       <console-settings is-module-sdk="true">
         <option name="myUseModuleSdk" value="true" />
-        <option name="myAddSourceRoots" value="true" />
       </console-settings>
     </option>
   </component>
@@ -44,5 +53,16 @@
       <updated>1568222359682</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

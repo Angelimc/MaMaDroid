@@ -30,40 +30,41 @@ def create_mapping_in_json(package_file, graph_file):
                         ' {}'.format(len(caller_callee_packages_list), len(caller_callee_methods_list)))
 
     for i, caller_callee_packages in enumerate(caller_callee_packages_list):
-        if i <= 2:
+        if i == 239:
             callee_packages = caller_callee_packages.split()
             caller_package = callee_packages.pop(0)
-            print "caller_package: ", caller_package
-            print "callee_packages: ", callee_packages
 
-            caller_callee_methods = caller_callee_methods_list[i].split(" ==> ")
+            caller_callee_methods = caller_callee_methods_list[i].split(' ==> ')
             caller_method = caller_callee_methods[0]
             callee_methods = ast.literal_eval(caller_callee_methods[1])
-            print "caller_method: ", caller_method
-            print "callee_methods: ", callee_methods
 
             if len(callee_packages) != len(callee_methods):
-                raise Exception('Length of callee packages: {} for {} does not match length of callee methods: {} for '
+                print('Length of callee packages: {} for {} does not match length of callee methods: {} for '
                                 '{} in line {}'.format(len(callee_packages), caller_package, len(callee_methods),
                                                        caller_method, i))
+                #raise Exception('Length of callee packages: {} for {} does not match length of callee methods: {} for '
+                #                '{} in line {}'.format(len(callee_packages), caller_package, len(callee_methods),
+                #                                       caller_method, i))
 
             for j, callee_package in enumerate(callee_packages):
                 key = caller_package + ' -> ' + callee_package
                 method_pair = caller_method + ' -> ' + callee_methods[j]
-                default_value = {"num_method_pairs": 0, "method_pairs": []}
+                default_value = {'num_method_pairs': 0, 'method_pairs': []}
                 caller_callee_package_map.setdefault(key, default_value)
-                caller_callee_package_map[key]["method_pairs"].append(method_pair)
-                caller_callee_package_map[key]["num_method_pairs"] += 1
+                caller_callee_package_map[key]['method_pairs'].append(method_pair)
+                caller_callee_package_map[key]['num_method_pairs'] += 1
 
     return caller_callee_package_map
 
 
 def order_and_count_method_pairs(caller_callee_package_map):
-    pass
+    for key in caller_callee_package_map:
+        caller_callee_package_map[key]['method_pairs'] = Counter(caller_callee_package_map[key]['method_pairs']).most_common()
 
 
 def order_by_num_method_pairs(caller_callee_package_map):
-    return OrderedDict(sorted(caller_callee_package_map.items(), key=lambda t: int(t[1]['num_method_pairs']), reverse=True))
+    return OrderedDict(sorted(caller_callee_package_map.items(), key=lambda t: int(t[1]['num_method_pairs']),
+                              reverse=True))
 
 
 def main(apk_name):
