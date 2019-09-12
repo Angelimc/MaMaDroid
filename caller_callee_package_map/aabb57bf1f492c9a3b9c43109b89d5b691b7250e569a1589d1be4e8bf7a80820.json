@@ -1,0 +1,42 @@
+{
+    "self-defined -> self-defined": {
+        "num_method_pairs": 3, 
+        "method_pairs": [
+            "<com.google.android.gms.internal.zzedm: void <init>(com.google.android.gms.internal.zzedl)> -> <com.google.android.gms.internal.zzedm: void <init>()>\n", 
+            "<com.google.android.gms.internal.zzcdn: void <init>(android.content.Context)> -> <com.google.android.gms.common.internal.zzbp: java.lang.Object zzu(java.lang.Object)>\n", 
+            "<com.google.android.gms.internal.zzcdn: void <init>(android.content.Context)> -> <com.google.android.gms.common.internal.zzbp: java.lang.Object zzu(java.lang.Object)>\n"
+        ]
+    }, 
+    "android.support.v4.widget -> android.support.v4.widget": {
+        "num_method_pairs": 2, 
+        "method_pairs": [
+            "<android.support.v4.widget.SwipeRefreshLayout: void <clinit>()> -> <android.support.v4.widget.SwipeRefreshLayout: void <clinit>()>\n", 
+            "<android.support.v4.widget.SwipeRefreshLayout: void <clinit>()> -> <android.support.v4.widget.SwipeRefreshLayout: void <clinit>()>\n"
+        ]
+    }, 
+    "android.support.v4.widget -> android.view": {
+        "num_method_pairs": 2, 
+        "method_pairs": [
+            "<android.support.v4.widget.SwipeRefreshLayout: void <clinit>()> -> <android.view.View: void <clinit>()>\n", 
+            "<android.support.v4.widget.SwipeRefreshLayout: void <clinit>()> -> <android.view.View: void <clinit>()>\n"
+        ]
+    }, 
+    "self-defined -> android.content": {
+        "num_method_pairs": 1, 
+        "method_pairs": [
+            "<com.google.android.gms.internal.zzcdn: void <init>(android.content.Context)> -> <android.content.ContextWrapper: android.content.Context getApplicationContext()>\n"
+        ]
+    }, 
+    "self-defined -> java.lang": {
+        "num_method_pairs": 1, 
+        "method_pairs": [
+            "<com.google.android.gms.internal.zzcdn: void <init>(android.content.Context)> -> <java.lang.Object: void <init>()>\n"
+        ]
+    }, 
+    "android.support.v4.widget -> java.lang": {
+        "num_method_pairs": 1, 
+        "method_pairs": [
+            "<android.support.v4.widget.SwipeRefreshLayout: void <clinit>()> -> <java.lang.Class: java.lang.String getSimpleName()>\n"
+        ]
+    }
+}
